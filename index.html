@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Clock</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="display"></div>
+    <div id="alarmContainer">
+      <button type="button" class="setAlarm">SET ALARM</button>
+      <div>
+        <span>ALARM</span>
+        <div id="alarmLight"></div>
+      </div>
+      <button type="button" id="alarmOff">ALARM OFF</button>
+    </div>
+  </div>
+  <div class="modal">
+    
+    <div class="modalContent">
+      <button id="x">X</button>
+      <p>Set an alarm time.</p>
+      <form id="alarmForm">
+        <input type="time" id="alarmInput" placeholder="xx:xx:xx x.m." required>
+        <button form="alarmForm" type="button" id="alarmBtn">Set</button>
+      </form> 
+    </div>
+  </div>  
+  
+  <script src="script.js"></script>  
+  <script src="alarm.js"></script>
+  <script src="modal.js"></script>
+</body>
+</html>

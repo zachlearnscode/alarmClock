@@ -1,0 +1,121 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 710px;
+  padding: 50px;
+  background: rgb(0,0,0);
+  background: linear-gradient(25deg, rgba(0,0,0,1) 0%, rgba(57,57,60,1) 50%, rgba(0,0,0,1) 100%);
+  border-radius: 50px;
+}
+#display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(44, 44, 44);
+  width: 700px;
+  height: 150px;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 6rem;
+  color: limegreen;
+  text-shadow: 0px 0px 75px lime;
+}
+#alarmContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+#alarmContainer > div {
+  display: flex;
+}
+span {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-right: 20px;
+}
+#alarmLight {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: grey;
+}
+#alarmContainer > button {
+  padding: 20px;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(57,57,60,1) 50%, rgba(0,0,0,1) 100%);
+  color: white;
+  border-radius: 40px;
+  letter-spacing: 1.5px;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 400px;
+  left: 8px;
+  
+  pointer-events: none;
+  opacity: 0;
+
+  transform: scale(1.15);
+  transition:
+    transform 0.1s ease,
+    opacity 0.1s ease;
+}
+.visible {
+  pointer-events: auto;
+  opacity: 1;
+
+  transform: scale(1);
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 30px;
+  color: grey;
+}
+.modal p {
+  margin-top: 0px;
+}
+form {
+  display: flex;
+  align-items: center;
+}
+form input {
+  font-size: 24px;
+  border-radius: 10px;
+  padding: 5px;
+
+}
+form button {
+  font-size: 24px;
+  margin-left: 20px;
+  padding: 5px;
+  font-family: 'Share Tech Mono', monospace;
+  background: none;
+  border-radius: 10px;
+}
+#x {
+  align-self: flex-end;
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 16px;
+}
